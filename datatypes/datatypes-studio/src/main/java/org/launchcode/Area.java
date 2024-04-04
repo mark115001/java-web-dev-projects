@@ -1,22 +1,20 @@
 package org.launchcode;
 
 import java.util.Scanner;
+
 public class Area {
+
     public static void main(String[] args) {
-        double pi = 3.14;
-        double userInput;
-        double circleArea;
-        Scanner input;
-
-        input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
+        double recLen;
         do {
-        System.out.println("Input a circle radius..must be a positive number");
-            userInput = input.nextDouble();
-        } while (userInput < 0);
-//        circleArea = (userInput * userInput * pi);
-        circleArea = Circle.getArea(userInput);
-        input.close();
-        System.out.println("The area with radius " + userInput + " is " + circleArea);
+            System.out.println("Please input the radius of a circle ");
+            recLen = input2.nextDouble();
 
-    } // end main
-} // end Area
+            if (recLen >= 0) {
+                System.out.println("The area of the circle with radius " + recLen + " is " + (recLen * recLen * 3.14));
+            }
+
+        } while (recLen >= 0);
+    }
+}
