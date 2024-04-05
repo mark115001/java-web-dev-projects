@@ -34,7 +34,9 @@ public class CountingCharacters {
                 testString = AlphaChars.justAlpha(userAnswer); // read from a file
                 userAnswer = "";
             } else {
-                System.out.println("Invalid response....please try again");
+                if (!userAnswer.isEmpty()) {
+                    System.out.println("Invalid response....please try again");
+                }
             }
         } while (!userAnswer.isEmpty());
 
