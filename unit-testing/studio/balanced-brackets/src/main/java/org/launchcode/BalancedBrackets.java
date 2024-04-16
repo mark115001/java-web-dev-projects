@@ -14,7 +14,7 @@ public class BalancedBrackets {
      *  "[LaunchCode]", "Launch[Code]", "[]LaunchCode", "", "[]"
      *
      * While these do not:
-     *   "[LaunchCode", "Launch]Code[", "[", "]["
+     *   "[LaunchCode", "Launch]Code[", "[", "][", "]",
      *
      * @param str - to be validated
      * @return true if balanced, false otherwise
