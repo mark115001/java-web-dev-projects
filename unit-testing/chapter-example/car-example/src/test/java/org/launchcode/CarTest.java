@@ -10,31 +10,31 @@ class CarTest {
 
     @BeforeEach
     public void createCarObject() {
-        test_car = new Car("Toyota", "Prius", 10, 50);
+        test_car = new Car("Toyota", "Prius", 10000, 50);
     }
 
     //TODO: add emptyTest so we can configure our runtime environment (remove this test before pushing to your personal GitLab account)
 
-//    @Test
-//    public void emptyTest() {
-//        assertEquals(10,10,.001);
-//    }
-
-//    @Test
-//    public void emptyTest() {
-//        assertFalse(0,0, .001);
-//    }
-
     @Test
     public void emptyTest() {
-        assertTrue(0,0, .001);
+        assertEquals(10,10,.001);
     }
 
-    private void assertTrue(int i, int i1, double v) {
-    }
+//    @Test
+//    public void emptyTest() {
+//        assertFalse(0,0,.001);
+//    }
 
-    private void assertFalse(int i, int i1, double v) {
-    }
+//    @Test
+//    public void emptyTest() {
+//        assertTrue(0,0, .001);
+//    }
+
+//    private void assertTrue(int i, int i1, double v) {
+//    }
+//
+//    private void assertFalse(int i, int i1, double v) {
+//    }
 
     //TODO: constructor sets gasTankLevel properly
     @Test
@@ -51,7 +51,6 @@ class CarTest {
       assertEquals(9, test_car.getGasTankLevel(),.001);
     }
 
-
     //TODO: gasTankLevel is accurate after attempting to drive past tank range
 
     @Test
@@ -64,7 +63,7 @@ class CarTest {
 
     @Test()
     public void testGasOverfillException() {
-        assertThrows(IllegalArgumentException.class, () -> test_car.addGas(5),"Shouldn't get here, car cannot " +
+        assertThrows(IllegalArgumentException.class, () -> test_car.addGas(1000),"Shouldn't get here, car cannot " +
                 "have more gas in tank than the size of the tank");
     }
 

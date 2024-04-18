@@ -1,2 +1,12 @@
-package PACKAGE_NAME;public class Main {
+public class Main {
+
+
+    public static void main(String[] args) {
+
+        HouseCat garfield = new HouseCat("Garfield", 12);
+        garfield.eat();
+        garfield.purr();
+        System.out.println(garfield.isTired());   // prints true
+
+    }
 }
