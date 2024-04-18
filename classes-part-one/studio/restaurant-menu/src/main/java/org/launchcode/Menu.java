@@ -1,13 +1,20 @@
 package org.launchcode;
 
+import java.util.ArrayList;
+
 public class Menu {
 
-    private String appetizer;
+    private ArrayList<String> appetizer;
 
-    private String main_course;
+    private  ArrayList<String> main_course;
 
-    private String side_disk;
+    private ArrayList<String> dessert;
 
-    private String dessert;
+
+
+//    private ArrayList<Double> itemCost;
+//
+//    private ArrayList<String> side_disk;
+
 
 }

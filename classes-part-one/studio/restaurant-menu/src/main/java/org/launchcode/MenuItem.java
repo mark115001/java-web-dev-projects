@@ -16,44 +16,44 @@ public class MenuItem {
         this.itemDescription = itemDescription;
         this.itemType = itemType;
     }
-
     public Date getDataAdded() {
         return dataAdded;
-    }
-
-    public void setDataAdded(Date dataAdded) {
-        this.dataAdded = dataAdded;
     }
 
     public String getItemName() {
         return itemName;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
-
     public Double getItemPrice() {
         return itemPrice;
-    }
-
-    public void setItemPrice(Double itemPrice) {
-        this.itemPrice = itemPrice;
     }
 
     public String getItemDescription() {
         return itemDescription;
     }
 
-    public void setItemDescription(String itemDescription) {
-        this.itemDescription = itemDescription;
-    }
-
     public String getItemType() {
         return itemType;
+    }
+
+    public void setDataAdded(Date dataAdded) {
+        this.dataAdded = dataAdded;
+    }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public void setItemPrice(Double itemPrice) {
+        this.itemPrice = itemPrice;
+    }
+
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
     }
 
     public void setItemType(String itemType) {
         this.itemType = itemType;
     }
+
 }
