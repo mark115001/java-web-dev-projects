@@ -8,9 +8,9 @@ public class Menu {
     private ArrayList<MenuItem> menuItems = new ArrayList<>();
     private LocalDate lastUpdated;
 
-    public ArrayList<MenuItem> getMenuItems() {
-        return menuItems;
-    }
+//    public ArrayList<MenuItem> getMenuItems() {
+//        return menuItems;
+//    }
 
     @Override
     public String toString() {

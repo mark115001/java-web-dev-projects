@@ -1,2 +1,8 @@
-package org.launchcode;public class CheckBox {
+package org.launchcode;
+
+public class CheckBox {
+
+
+
+
 }

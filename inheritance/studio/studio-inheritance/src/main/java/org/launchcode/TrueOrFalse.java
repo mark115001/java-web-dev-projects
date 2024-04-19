@@ -1,2 +1,4 @@
-package org.launchcode;public class TrueOrFalse {
+package org.launchcode;
+
+public class TrueOrFalse {
 }
