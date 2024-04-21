@@ -2,13 +2,14 @@ import org.launchcode.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import questions.Question;
 
 public class Survey extends Quiz {
 
-    private final ArrayList<String> = new ArrayList<>();
+    private final ArrayList<String> allResponses = new ArrayList<>();
 
     ArrayList<String> getAllResponses() {
-        return getAllResponses();
+        return allResponses;
     }
 
     @Override
@@ -26,15 +27,16 @@ public class Survey extends Quiz {
                 } else {
                     while (question.isInvalid(userResponse)) {
                         System.out.println(System.lineSeparator() + "That response is invalid...Please try again:");
-                        userResponse= input.nextLine();
+                        userResponse = input.nextLine();
                     }
                     System.out.println("Got it!");
 
-                    if(question instanceof ShortAnswer || questions instanceof Paragraph || question instanceof LinearScale) {
+                    String content;
+                    if(question instanceof ShortAnswer || question instanceof Paragraph || question instanceof LinearScale) {
                         content = userResponse;
                     } else {
                         int userResponseNum = Integer.parseInt(userResponse);
-                        content = question.getChoiceMap().get(userRespNum).getContent();
+                        content = question.getChoiceMap().get(userResponseNum).getContent();
                     }
                     String resp = question.getQuestion() + ": " + content;
                     getAllResponses().add(resp);

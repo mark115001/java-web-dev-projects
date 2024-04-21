@@ -33,10 +33,10 @@ public class QuizRunner {
 
         String q3 = "Which poem did history-making poet Amanda Gorman recite at the U.S. presidential inauguration in 2021? ";
         Choice[] q3Choices = new Choice[] {
-                new Choice("The Hill Wed Climb", true),
-                new Choice("the miracle of the Morning", false),
-                new Choice("We Rise", false),
-                new Choice("New Day's Lyric", false)
+                new Choice("The Hill Wed Climb"),
+                new Choice("the miracle of the Morning", true),
+                new Choice("We Rise"),
+                new Choice("New Day's Lyric", true)
         };
         MultipleChoice question3 = new MultipleChoice(q3, q3Choices);
 
