@@ -1,4 +1,6 @@
-package org.launchcode;
+package org.launchcode.Flavor;
+
+import org.launchcode.Ingredient;
 
 import java.util.ArrayList;
 

@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Case {
-    private ArrayList<Flavor> flavors = new ArrayList<>();
-    private ArrayList<Cone> cones = new ArrayList<>();
+    private ArrayList<org.launchcode.Flavor.Flavor> flavors = new ArrayList<>();
+    private ArrayList<org.launchcode.Cone> cones = new ArrayList<>();
 
     public Case(){
-        Cone cone1 = new Cone("Waffle", 1.25, new ArrayList<>(Arrays.asList( "gluten")));
-        Cone cone2 = new Cone("Sugar", 0.75, new ArrayList<>(Arrays.asList( "gluten")));
-        Cone cone3 = new Cone("Wafer", 0.50, new ArrayList<>(Arrays.asList( "gluten")));
-        Cone cone4 = new Cone("Bowl", 0.05, new ArrayList<>(Arrays.asList( "none")));
+        org.launchcode.Cone cone1 = new org.launchcode.Cone("Waffle", 1.25, new ArrayList<>(Arrays.asList( "gluten")));
+        org.launchcode.Cone cone2 = new org.launchcode.Cone("Sugar", 0.75, new ArrayList<>(Arrays.asList( "gluten")));
+        org.launchcode.Cone cone3 = new org.launchcode.Cone("Wafer", 0.50, new ArrayList<>(Arrays.asList( "gluten")));
+        org.launchcode.Cone cone4 = new org.launchcode.Cone("Bowl", 0.05, new ArrayList<>(Arrays.asList( "none")));
         cones.add(cone1);
         cones.add(cone2);
         cones.add(cone3);
         cones.add(cone4);
 
-        Flavor flavor1 = new Flavor("Vanilla", 0.75, new ArrayList<>(Arrays.asList( "dairy")));
-        Flavor flavor2 = new Flavor("Chocolate", 0.75, new ArrayList<>(Arrays.asList( "dairy")));
-        Flavor flavor3 = new Flavor("Red Velvet", 0.85, new ArrayList<>(Arrays.asList( "dairy", "red #5")));
-        Flavor flavor4 = new Flavor("Rocky Road", 0.85, new ArrayList<>(Arrays.asList( "dairy", "nuts", "gelatin")));
-        Flavor flavor5 = new Flavor("Strawberry Sorbet", 0.50, new ArrayList<>(Arrays.asList( "strawberry")));
+        org.launchcode.Flavor.Flavor flavor1 = new org.launchcode.Flavor.Flavor("Vanilla", 0.75, new ArrayList<>(Arrays.asList( "dairy")));
+        org.launchcode.Flavor.Flavor flavor2 = new org.launchcode.Flavor.Flavor("Chocolate", 0.75, new ArrayList<>(Arrays.asList( "dairy")));
+        org.launchcode.Flavor.Flavor flavor3 = new org.launchcode.Flavor.Flavor("Red Velvet", 0.85, new ArrayList<>(Arrays.asList( "dairy", "red #5")));
+        org.launchcode.Flavor.Flavor flavor4 = new org.launchcode.Flavor.Flavor("Rocky Road", 0.85, new ArrayList<>(Arrays.asList( "dairy", "nuts", "gelatin")));
+        org.launchcode.Flavor.Flavor flavor5 = new org.launchcode.Flavor.Flavor("Strawberry Sorbet", 0.50, new ArrayList<>(Arrays.asList( "strawberry")));
         flavors.add(flavor1);
         flavors.add(flavor2);
         flavors.add(flavor3);
@@ -29,19 +29,19 @@ public class Case {
         flavors.add(flavor5);
     }
 
-    public ArrayList<Flavor> getFlavors() {
+    public ArrayList<org.launchcode.Flavor.Flavor> getFlavors() {
         return flavors;
     }
 
-    public ArrayList<Cone> getCones() {
+    public ArrayList<org.launchcode.Cone> getCones() {
         return cones;
     }
 
-    public void setFlavors(ArrayList<Flavor> flavors) {
+    public void setFlavors(ArrayList<org.launchcode.Flavor.Flavor> flavors) {
         this.flavors = flavors;
     }
 
-    public void setCones(ArrayList<Cone> cones) {
+    public void setCones(ArrayList<org.launchcode.Cone> cones) {
         this.cones = cones;
     }
 }
