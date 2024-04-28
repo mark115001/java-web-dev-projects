@@ -17,11 +17,28 @@ public class Main {
 
     public static void Divide(int x, int y)
     {
+        try {
+            int result = x / y;
+        }
+            catch(ArithmeticException e) {
+
+                System.out.println("ArithmeticException occurred....division by 0 ");
+                throw e;
+            }
+
         // Write code here!
     }
 
-    public static int CheckFileExtension(String fileName)
-    {
+    public static int CheckFileExtension(String fileName) {
+        int num;
+        if (fileName.endsWith("java")) {
+            num = 1;
+    } else if (fileName.endsWith(null) || fileName.endsWith("")) {
+            num = -1;
+    } else {
+            num = 0;
+        }
         // Write code here!
+        return num;
     }
 }
