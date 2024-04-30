@@ -4,4 +4,5 @@ public interface OpticalDisk {
 
     double spinDisc();
 
+
 }

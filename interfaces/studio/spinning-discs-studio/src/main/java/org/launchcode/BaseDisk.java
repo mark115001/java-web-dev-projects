@@ -16,6 +16,7 @@ public abstract class BaseDisk {
         this.diskCapacity = diskCapacity;
     }
 
+
     public void setRpmDiskSpeed(double rpmDiskSpeed) {
         this.rpmDiskSpeed = rpmDiskSpeed;
     }
