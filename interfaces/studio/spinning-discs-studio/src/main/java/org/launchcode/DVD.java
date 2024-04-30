@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class DVD extends BaseDisk implements OpticalDisk {
+public class DVD extends org.launchcode.BaseDisk implements org.launchcode.OpticalDisk {
 
     // TODO: Implement your custom interface.
     @Override

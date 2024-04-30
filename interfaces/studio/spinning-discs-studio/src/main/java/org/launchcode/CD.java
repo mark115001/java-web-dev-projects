@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class CD extends BaseDisk implements OpticalDisk {
+public class CD extends org.launchcode.BaseDisk implements org.launchcode.OpticalDisk {
     // TODO: Implement your custom interface.
 
     @Override
